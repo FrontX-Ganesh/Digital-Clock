@@ -1,31 +1,42 @@
-import React, { useState , useEffect } from "react";
+import React from "react";
+import colorCode from "./Json_data";
+import './App.css';
 
 const Apps = () => {
-    const [num, setNum] = useState(0);
-    const [nums, setNums] = useState(0);
-
-    useEffect(
-        () => {
-            alert('I am clicked.');
-        }
-    , [nums]);
-
-    const increment = () => {
-        setNum(num + 1);
-    } 
-
-    const increments = () => {
-        setNums(nums + 1);
-    } 
     
-    return(
+
+      return(
         <>  
-            <p> {num} </p>
-            <button onClick={increment}>Click </button><br />
-            <p> {nums} </p>
-            <button onClick={increments}>Click </button>
+
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Color</th>
+                            <th>Hex Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            colorCode.map( (curEle, index) => {
+                                return(
+                                    <tr key = {index}>
+                                        <td> {curEle.color} </td>
+                                        <td> {curEle.value} </td>
+                                    </tr>
+                                )
+                            })
+                        }
+                    </tbody>
+                </table>
+        
+            {/* {
+                color.map( (item) => {
+                    return 
+                })
+            } */}
         </>
-    );  
+      );
 }
 
 export default Apps;

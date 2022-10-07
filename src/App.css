@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-body {
+/* body {
   background: #0f3854;
   background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
   font-size: 40px;
@@ -10,10 +10,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 .clock {
   color: white;
   font-variant-numeric: slashed-zero;
   letter-spacing: 0.05em;
   font-size: 40px;
+}
+table, th, td {
+  border: 1px solid;
 }
