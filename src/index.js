@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
-import Apps from './Apps';
+// import Apps from './Apps';
+import App from './Routing/App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <Apps />
+    <App />
   </>
 );
 
