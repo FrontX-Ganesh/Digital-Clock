@@ -3,12 +3,8 @@ import colorCode from "./Json_data";
 import './App.css';
 
 const Apps = () => {
-    
-
       return(
         <>  
-
-
                 <table>
                     <thead>
                         <tr>
@@ -29,12 +25,6 @@ const Apps = () => {
                         }
                     </tbody>
                 </table>
-        
-            {/* {
-                color.map( (item) => {
-                    return 
-                })
-            } */}
         </>
       );
 }
